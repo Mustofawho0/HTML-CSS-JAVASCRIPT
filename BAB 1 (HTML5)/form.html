@@ -30,6 +30,35 @@
           minlength="8"
           maxlength="12"
         /><br />
+        <label for="address">Address:</label><br />
+        <textarea
+          required
+          name="address"
+          id="address"
+          cols="25"
+          rows="5"
+        ></textarea
+        ><br />
+        <label aria-required="true" for="gender">Gender:</label><br />
+        <input
+          required="required"
+          type="radio"
+          id="male"
+          name="gender"
+          value="male"
+        />
+        Male <br />
+        <input
+          required="required"
+          type="radio"
+          id="female"
+          name="gender"
+          value="female"
+        />
+        Female <br />
+        <label for="hoby">Hobby:</label> <br />
+        <input type="checkbox" id="basketball" name="hoby" value="hoby" />
+        Basketball <br />
       </fieldset>
     </form>
   </body>
