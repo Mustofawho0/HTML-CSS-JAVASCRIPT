@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validasi</title>
+  </head>
+  <body>
+    <p>ISILAH FORM DIBAWAH INI</p>
+    <hr />
+    <form action="">
+      Nama * <br />
+      <input type="text" name="nama" id="nama" required /> <br />
+      Alamat * <br />
+      <textarea name="Alamat" id="Alamat" cols="30" rows="4"></textarea> <br />
+      No Telepon * <br />
+      <input
+        type="text"
+        id="telpon"
+        name="telpon"
+        minlength="8"
+        pattern="\+62?(\d)+|\(\d+\)"
+      /><br />
+      Alamat Email * <br />
+      <input type="email" name="email" id="email" required /> <br />
+      Umur * <br />
+      <input type="number" id="num" name="number" /><br />
+      <br />
+      <button>Kirim</button>
+    </form>
+  </body>
+</html>

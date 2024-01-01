@@ -24,11 +24,10 @@
         <label for="number">Phone Number:</label><br />
         <input
           required
-          type="tel"
+          type="text"
           id="phone"
           name="phone"
-          minlength="8"
-          maxlength="12"
+          pattern="\+62?(\d)+|\(\d+\)"
         /><br />
         <label for="address">Address:</label><br />
         <textarea
