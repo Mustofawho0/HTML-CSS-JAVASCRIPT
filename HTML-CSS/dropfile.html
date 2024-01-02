@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh drop file and Thumbnail</title>
+  </head>
+  <body>
+    <form action="">
+      <input
+        type="file"
+        id="input"
+        name="input_file"
+        onchange="handleFiles(this.files)"
+      />
+    </form>
+    <div id="dropbox">
+      <img src="drop.png" id="image" alt="Profile" width="300px" />
+    </div>
+    <script type="text/javascript">
+      let dropbox;
+      dropbox = document.getElementById("dropbox");
+      dropbox.addEventListener("dragenter", dragenter, false);
+      dropbox.addEventListener("dragover", dragover, false);
+      dropbox.addEventListener("drop", drop, false);
+
+      function dragenter(a) {
+        a.stopPropagation();
+        a.preventDefault();
+      }
+      function dragover(a) {
+        a.stopPropagation();
+        a.preventDefault();
+      }
+      function drop(a) {
+        a.stopPropagation();
+        a.preventDefault();
+        const dt = a.dataTransfer;
+        const files = dt.files;
+        document.getElementById("input").files = files;
+      }
+      function handleFiles(files) {
+        const file = files[0];
+        const reader = new FileReader();
+
+        if (file.type.startsWith("image/")) {
+          reader.onload = function (e) {
+            document.getElementById("image").src = e.target.result;
+          };
+          reader.readAsDataURL(file);
+        }
+      }
+    </script>
+  </body>
+</html>

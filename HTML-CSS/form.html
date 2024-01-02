@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pendaftaran Pengunjung</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="stylesheet" href="input.js" type="text/javascript" />
   </head>
   <body>
     <form action="">
+      <script src="input.js"></script>
       <div class="caption">Pendaftaran Pengunjung 2023</div>
       <fieldset id="fieldset">
         <label for="photo">Upload Photo:</label>
-        <input required type="file" name="photo" id="file" /><br />
+        <input
+          required
+          type="file"
+          name="photo"
+          id="file"
+          onchange="handleFiles(this.files)"
+        /><br />
+        <img src="C:\Users\musto\Downloads\drop.jpg" alt="Profile" id="image" />
+        <br />
         <label for="username">Username:</label><br />
         <input required type="text" name="username" id="username" /><br />
         <label for="password">Password:</label><br />
