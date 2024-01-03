@@ -1,0 +1,12 @@
+body {
+  font-family: verdana;
+  font-size: 14px;
+  font-display: auto;
+}
+h1 {
+  color: red;
+}
+p {
+  font-family: arial;
+  font-size: small;
+}

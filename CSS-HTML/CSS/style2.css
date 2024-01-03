@@ -1,0 +1,11 @@
+body {
+  font-family: verdana;
+}
+h3 {
+  color: red;
+  font-style: italic;
+}
+p {
+  color: blue;
+  font-size: 12px;
+}
