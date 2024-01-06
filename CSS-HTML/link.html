@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>latihan Link Pseudo Class CSS</title>
+  </head>
+  <style type="text/css" media="screen">
+    * {
+      text-align: justify;
+      justify-items: auto;
+    }
+    ul {
+      list-style-type: none;
+      font-size: 20px;
+    }
+    a {
+      text-decoration: none;
+    }
+    a:link {
+      color: blue;
+    }
+    a:visited {
+      color: white;
+    }
+    a:hover {
+      color: red;
+    }
+    a:active {
+      color: yellow;
+    }
+    .header {
+      padding: 10px 10px 10px 10px;
+      background-color: #33090d;
+      color: white;
+    }
+    .header h1 {
+      text-align: center;
+    }
+    .header ul {
+      text-align: center;
+    }
+    p.p1::first-letter {
+      font-size: 300%;
+      font-family: verdana;
+      float: left;
+      color: black;
+      font-weight: 700;
+      line-height: 1;
+      margin-right: 0.6875rem;
+    }
+  </style>
+  <body>
+    <div class="header">
+      <h1>STMIK Kian Santang</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <p class="p1">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci eius
+      tempora, ratione sunt quos recusandae maiores? Delectus quibusdam
+      perspiciatis repellendus ullam laborum culpa sequi voluptatibus quis, odio
+      vero. Accusamus, ullam. Lorem ipsum, dolor sit amet consectetur
+      adipisicing elit. Minus vero est corrupti pariatur eligendi. Recusandae
+      ipsa vero ratione, suscipit pariatur ut? Nam facilis numquam eius vero,
+      tenetur quibusdam aliquid odit!. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Quae, id nesciunt. Beatae maiores facere voluptatum.
+      Corporis aut saepe illo accusamus maxime ducimus autem dolorem commodi.
+      Nostrum quisquam molestias unde sequi!. Lorem, ipsum dolor sit amet
+      consectetur adipisicing elit. Sed doloremque esse maiores inventore magnam
+      necessitatibus nisi. Ut soluta aspernatur consectetur harum placeat
+      dignissimos quae, odio at voluptatem inventore porro laboriosam!
+    </p>
+  </body>
+</html>
