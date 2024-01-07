@@ -1,0 +1,40 @@
+ul {
+  list-style-type: none;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+}
+a:link {
+  color: blue;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: red;
+}
+a:active {
+  color: yellow;
+}
+.header {
+  padding: 10px 10px 10px 10px;
+  background-color: #33090d;
+  color: white;
+  text-align: center;
+}
+.header li {
+  display: inline;
+}
+.header a {
+  padding-right: 20px;
+}
+p.p1::first-letter {
+  font-size: 300%;
+  font-family: verdana;
+  float: left;
+  color: black;
+  font-weight: 700;
+  line-height: 1;
+  margin-right: 0.6875rem;
+}

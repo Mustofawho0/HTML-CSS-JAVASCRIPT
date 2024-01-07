@@ -1,0 +1,8 @@
+p.mytext {
+  font: 14pt/16pt;
+  color: red;
+}
+p.histext {
+  font: italic 12/14pt Times;
+  color: green;
+}
