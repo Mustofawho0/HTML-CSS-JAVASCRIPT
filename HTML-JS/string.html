@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan JavaScript String</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var corp = "Educative Games";
+      var corpweb = "www.educativegames.net";
+      var visit = "Kunjungilah www.google.com";
+      var nilai = "A, B, C, D, E";
+
+      document.write("<p>" + corp[8] + "</p>");
+      document.write("<p>" + corp.fontcolor("red") + "</p>");
+      document.write("<p>" + corp.length + "</p>");
+      document.write(corp.indexOf("Games"));
+
+      var hasil1 = visit.replace("www.google.com", corpweb);
+      document.write("<p>" + corp.link("www.google.com") + "</p>");
+      document.write("<p>" + visit.strike() + "</p>");
+      document.write("<p>" + corp.toUpperCase() + "</p>");
+      document.write("<p>" + corp.toLowerCase() + "</p>");
+
+      var hasil2 = visit.split(",");
+      document.write("<p>" + hasil2 + "</p>");
+      document.write(hasil2[3]);
+      document.write("<p>" + corp.concat(" ", corpweb) + "</p>");
+      document.write("<p>" + corp.search("c") + "</p>");
+      document.write("<p>" + corp.slice(1, 15) + "</p>");
+      document.write("<p>" + corp.blink() + "</p>");
+      document.write("<p>" + corp.bold() + "</p>");
+      document.write("<p>" + corp.charCodeAt(6) + "</p>");
+    </script>
+  </body>
+</html>
