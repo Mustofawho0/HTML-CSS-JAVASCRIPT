@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan JavaScript</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var nm = 0; // nm adalah variabel untuk menyimpan nama
+      var i = 0; /* i adalah index array.
+      index ibarat nomor kebong kereta */
+
+      var bil1,
+        bil2,
+        bilMax = 0;
+
+      bil1 = 3;
+      bil2 = 4;
+      // Max2 berfungsi mencari maksimum dari 2 bilangan
+      function max2(bil1, bil2) {
+        if (bil1 > bil2) {
+          return bil1;
+        } else {
+          return bil2;
+        }
+      }
+      bilMax = max2(bil1, bil2);
+      document.write(bilMax);
+    </script>
+  </body>
+</html>

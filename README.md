@@ -1,1 +1,1 @@
-Enter file contents here
+Hello everyone, thank you for visiting my Repository. This is my journey on how to be better than before. I hope my repository is useful for all of you. In this Repository I write about HTML, CSS and JavaScript for beginners. Even though it's not very complete and clear, I hope you understand it :)
