@@ -34,7 +34,66 @@
           " keluaran tahun " +
           arrTahun[1] +
           "</p>"
-      );
+      ); // hasil
+
+      var tua = ["Supra", "Nissan", "Honda"]; // contoh
+      var pushTua = tua.push("McLaren", "Koenigsegg"); // contoh
+
+      document.write("<p>" + tua.join(" - ") + "</p>"); // hasil
+      document.write("<p>" + pushTua + "</p>"); // hasil
+
+      document.write("<p>" + "----------------------------" + "</p>"); // pembatas
+
+      var pushMobil = arrMobil.push("Nissan", "Honda"); // gabungkan array
+
+      document.write("<p>" + arrMobil.join(" - ") + "</p>"); // hasil
+      document.write("<p>" + pushMobil + "</p>"); // hasil
+
+      document.write("<p>" + "----------------------------" + "</p>"); // pembatas
+
+      document.write("<p>" + arrMobil.pop() + "</p>"); // hapus elemen terakhir
+      document.write("<p>" + arrMobil.join(" - ") + "</p>"); // hasil
+
+      document.write("<p>" + "----------------------------" + "</p>"); // pembatas
+
+      document.write("<p>" + arrMobil.reverse() + "</p>"); // membalik posisi array
+      document.write("<p>" + arrMobil.shift() + "</p>"); // hapus elemen awal
+      document.write("<p>" + arrMobil.join(" - ") + "</p>"); // hasil
+
+      document.write("<p>" + "----------------------------" + "</p>"); // pembatas
+
+      document.write("<p>" + arrMobil.slice(1, 3) + "</p>"); // menyalin array
+
+      document.write("<p>" + "----------------------------" + "</p>"); // pembatas
+
+      var sport = ["GTR", "Mitsubitsi", "Mustang", "Lamborgini", "Volvo"]; // contoh
+      var slSport = sport.slice(2, 5); // menyalin array
+
+      document.write("<p>" + slSport.join(" - ") + "</p>"); // hasil
+
+      document.write("<p>" + "----------------------------" + "</p>"); // pembatas
+
+      var offroad = [
+        "Jeep",
+        "Fortuner",
+        "Kawasaki",
+        "Subaru",
+        "BMW",
+        "Daihatsu",
+      ];
+      document.write("<p>" + offroad.join(" - ") + "</p>"); //hasil
+      offroad.splice(2, 2); // mengurangi array
+      document.write("<p>" + offroad.join(" - ") + "</p>"); //hasil
+      offroad.splice(3, 0, "Civic", "Ferrari"); // menambahkan array dan untuk menghapus elemen ubahlah angka 0.
+      document.write("<p>" + offroad.join(" - ") + "</p>"); //hasil
+
+      document.write("<p>" + "----------------------------" + "</p>"); // pembatas
+
+      offroad.sort(); // mengurutkan array (ascending)
+      document.write("<p>" + offroad.join(" - ") + "</p>"); // hasil
+
+      offroad.reverse(); // mengurutkan array (descending)
+      document.write("<p>" + offroad.join(" - ") + "</p>"); // hasil
     </script>
   </body>
 </html>
