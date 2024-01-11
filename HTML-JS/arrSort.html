@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan JavaScript Array Sort</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var buah = ["blewah", "mangga", "apel", "nanas", "pepaya", "jambu"];
+      buah.sort(); // ascending
+      document.write(buah.join(" - ") + "<br>"); // hasil
+
+      document.write("<p>" + "----------------------------" + "</p>"); // pembatas
+
+      var angka = [3, 2, 4, 5, 6, 7, 8, 9, 1, 0, 10];
+      angka.sort();
+      document.write(angka.join(" - ") + "<br>"); // hasil
+
+      document.write("<p>" + "----------------------------" + "</p>"); // pembatas
+
+      var buah2 = ["mangga", "apel", "nanas", "pepaya", "jambu"];
+      // dengan fungsi descending
+      buah2.sort((a, b) => {
+        if (a > b) return -1;
+        if (a < b) return 1;
+        return 0;
+      });
+      document.write(buah2.join(" - ") + "<br>"); // hasil
+
+      document.write("<p>" + "----------------------------" + "</p>"); // pembatas
+
+      // dengan method descending
+      buah.reverse();
+      document.write(buah.join(" - ") + "<br>"); // hasil
+
+      document.write("<p>" + "----------------------------" + "</p>"); // pembatas
+
+      // ascending angka
+      var angka = [3, 2, 8, 1, 4, 5, 3, 8, 7, 9, 10, 55, 45, 77];
+      angka.sort((a, b) => a - b);
+      document.write(angka.join(" - ") + "<br>"); // hasil
+
+      document.write("<p>" + "----------------------------" + "</p>"); // pembatas
+
+      // descending angka
+      angka.sort((a, b) => b - a);
+      document.write(angka.join(" - ") + "<br>"); // hasil
+
+      document.write("<p>" + "----------------------------" + "</p>"); // pembatas
+
+      // ascending tanggal
+      var date = [
+        "2024-01-01T19:54:51Z",
+        "2024-01-04T20:00:00Z",
+        "2024-01-08T17:00:00Z",
+        "2024-01-02T17:00:00Z",
+      ];
+      date.sort((a, b) => new Date(a) - new Date(b));
+      document.write(date.join(" - ") + "<br>"); // hasil
+
+      document.write("<p>" + "----------------------------" + "</p>"); // pembatas
+
+      // descending tanggal
+      date.sort((a, b) => new Date(b) - new Date(a));
+      document.write(date.join(" - ") + "<br>"); // hasil
+
+      document.write("<p>" + "----------------------------" + "</p>"); // pembatas
+
+      var nilaiMHS = [
+        { nama: "pram", nilai: 77 },
+        { nama: "budi", nilai: 74 },
+        { nama: "asman", nilai: 80 },
+        { nama: "wu", nilai: 75 },
+      ];
+      nilaiMHS.sort((a, b) => a.nilai - b.nilai);
+      document.write(nilaiMHS.join(" - ") + "<br>");
+    </script>
+  </body>
+</html>
