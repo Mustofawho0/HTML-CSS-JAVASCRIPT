@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan JavaScript BREAK dan CONTINUE Statement</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var i = 1;
+
+      for (i = 1; i <= 10; i++) {
+        if (i == 5) {
+          alert("Pembagian dengan 0 penggunaan Break dan Continue");
+          break;
+        }
+        document.write(1 / (i - 5) + " <br>");
+      }
+      document.write("Penggunaan Break");
+    </script>
+    <br />
+    <hr />
+    <br />
+    <script type="text/javascript">
+      var ii = 1;
+
+      for (ii = 1; ii <= 10; ii++) {
+        if (ii == 5) {
+          continue;
+        }
+        document.write(1 / (ii - 5) + "<br>");
+        ii++;
+      }
+      document.write("Penggunaan Continue");
+    </script>
+  </body>
+</html>
