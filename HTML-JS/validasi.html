@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan JavaScript Validasi</title>
+  </head>
+  <body>
+    <script language="JavaScript" src="url/validasi.js"></script>
+    <script language="JavaScript">
+      function validasi() {
+        alpabet(document.getElementById("nama"), "Nama harus alpabet semua");
+        alpaNum(
+          document.getElementById("alamat"),
+          "Alamat hanya boleh alfanumeric"
+        );
+        number(document.getElementById("telp"), "Nomor Telpon harus angka");
+        alpaNum(
+          document.getElementById("pass"),
+          "Password hanya boleh meliputi alfanumeric"
+        );
+      }
+    </script>
+    <form action="">
+      <pre>
+        Silahkan Masukkan Data Pribadi Anda !!
+        <hr>
+        Nama : <input type="text" id="nama" name="nama"> <br>
+        Alamat : <input type="text" id="alamat" name="alamat" size="50"><br>
+        No Telpon : <input type="number" id="telp" name="telpon" size="10"><br>
+        Password : <input type="password" id="pass" name="password"><br>
+        <hr>
+        <input type="submit" onclick="validasi()" value="Submit">
+        <input type="reset" value="Reset">
+      </pre>
+    </form>
+  </body>
+</html>
